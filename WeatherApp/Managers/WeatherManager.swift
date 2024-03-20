@@ -10,7 +10,8 @@ import WeatherKit
 import Foundation
 
 final class WeatherManager {
-    private let shared = WeatherManager()
+    
+    static let shared = WeatherManager()
     
     private init() {
         //
