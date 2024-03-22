@@ -16,8 +16,11 @@
 		FECD6F2E2BAAF13E005A2F89 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F2D2BAAF13E005A2F89 /* WeatherManager.swift */; };
 		FECD6F332BAAF2D2005A2F89 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F322BAAF2D2005A2F89 /* SettingsViewController.swift */; };
 		FECD6F352BAAF33E005A2F89 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F342BAAF33E005A2F89 /* TabViewController.swift */; };
-		FECD6F372BAB65CC005A2F89 /* CurrentWeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F362BAB65CC005A2F89 /* CurrentWeatherView.swift */; };
+		FECD6F372BAB65CC005A2F89 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F362BAB65CC005A2F89 /* WeatherView.swift */; };
 		FECD6F392BAB6825005A2F89 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F382BAB6825005A2F89 /* SettingsView.swift */; };
+		FECD6F3B2BAC3387005A2F89 /* SettingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F3A2BAC3387005A2F89 /* SettingsViewViewModel.swift */; };
+		FECD6F3D2BAC6B63005A2F89 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F3C2BAC6B63005A2F89 /* WeatherModel.swift */; };
+		FECD6F3F2BAC6CB5005A2F89 /* CurrentWeatherViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECD6F3E2BAC6CB5005A2F89 /* CurrentWeatherViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +35,11 @@
 		FECD6F2D2BAAF13E005A2F89 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		FECD6F322BAAF2D2005A2F89 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FECD6F342BAAF33E005A2F89 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
-		FECD6F362BAB65CC005A2F89 /* CurrentWeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherView.swift; sourceTree = "<group>"; };
+		FECD6F362BAB65CC005A2F89 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		FECD6F382BAB6825005A2F89 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		FECD6F3A2BAC3387005A2F89 /* SettingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewViewModel.swift; sourceTree = "<group>"; };
+		FECD6F3C2BAC6B63005A2F89 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		FECD6F3E2BAC6CB5005A2F89 /* CurrentWeatherViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +86,7 @@
 		FECD6F252BAAF0B5005A2F89 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FECD6F362BAB65CC005A2F89 /* CurrentWeatherView.swift */,
+				FECD6F362BAB65CC005A2F89 /* WeatherView.swift */,
 				FECD6F382BAB6825005A2F89 /* SettingsView.swift */,
 			);
 			path = Views;
@@ -89,6 +95,8 @@
 		FECD6F262BAAF0C6005A2F89 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FECD6F3A2BAC3387005A2F89 /* SettingsViewViewModel.swift */,
+				FECD6F3E2BAC6CB5005A2F89 /* CurrentWeatherViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -96,6 +104,7 @@
 		FECD6F272BAAF0CD005A2F89 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FECD6F3C2BAC6B63005A2F89 /* WeatherModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -200,8 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECD6F3B2BAC3387005A2F89 /* SettingsViewViewModel.swift in Sources */,
 				FECD6F352BAAF33E005A2F89 /* TabViewController.swift in Sources */,
-				FECD6F372BAB65CC005A2F89 /* CurrentWeatherView.swift in Sources */,
+				FECD6F372BAB65CC005A2F89 /* WeatherView.swift in Sources */,
 				FECD6F2C2BAAF12A005A2F89 /* LocationManager.swift in Sources */,
 				FECD6F392BAB6825005A2F89 /* SettingsView.swift in Sources */,
 				FECD6F162BAAEFA5005A2F89 /* WeatherViewController.swift in Sources */,
@@ -209,6 +219,8 @@
 				FECD6F122BAAEFA5005A2F89 /* AppDelegate.swift in Sources */,
 				FECD6F332BAAF2D2005A2F89 /* SettingsViewController.swift in Sources */,
 				FECD6F142BAAEFA5005A2F89 /* SceneDelegate.swift in Sources */,
+				FECD6F3F2BAC6CB5005A2F89 /* CurrentWeatherViewViewModel.swift in Sources */,
+				FECD6F3D2BAC6B63005A2F89 /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
