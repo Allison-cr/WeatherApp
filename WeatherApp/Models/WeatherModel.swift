@@ -14,6 +14,9 @@ struct ForecastResponseBody: Decodable {
     struct ForecastItemResponse: Decodable {
         var main: MainResponse
         var weather: [WeatherResponse]
+        var wind: WindResponse
+        var visibility: Double
+        var pop: Double
         var dt_txt: String
         
         struct MainResponse: Decodable {
@@ -30,6 +33,12 @@ struct ForecastResponseBody: Decodable {
             var main: String
             var description: String
             var icon: String
+        }
+        
+        struct WindResponse: Decodable {
+            var speed: Double
+            var deg: Double
+            var gust: Double 
         }
     }
     
